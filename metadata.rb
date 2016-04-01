@@ -6,8 +6,8 @@ description 'Installs/Configures apt Docker Vendor-Specific Repository'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version '0.3.0'
 
-source_url 'https://github.com/st-isidore-de-seville/cookbook-apt-docker'
-issues_url 'https://github.com/st-isidore-de-seville/cookbook-apt-docker/issues'
+source_url 'https://github.com/st-isidore-de-seville/cookbook-apt-docker' if respond_to?(:source_url)
+issues_url 'https://github.com/st-isidore-de-seville/cookbook-apt-docker/issues' if respond_to?(:issues_url)
 
 recipe 'apt-docker::default', 'Installs/Configures apt Docker Vendor-Specific Repository'
 
